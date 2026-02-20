@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Shreyas Anime Art</title>
+    <title>Shreyas Anime Art Store</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px gray;
+        }
+        img {
+            border-radius: 8px;
+        }
+    </style>
 </head>
-<body style="text-align:center; font-family:Arial;">
+<body>
 
 <h1>Anime Drawings Available</h1>
 
-<img src="luffy.jpeg" width="250"><br><br>
-<img src="naruto.jpeg" width="250"><br><br>
-<img src="rayne.jpeg" width="250"><br><br>
+<div class="gallery">
+    <div class="card">
+        <img src="luffy.jpeg" width="250">
+        <p>Price: ₹499</p>
+    </div>
+
+    <div class="card">
+        <img src="naruto.jpeg" width="250">
+        <p>Price: ₹499</p>
+    </div>
+
+    <div class="card">
+        <img src="rayne.jpeg" width="250">
+        <p>Price: ₹499</p>
+    </div>
+</div>
 
 </body>
 </html>
