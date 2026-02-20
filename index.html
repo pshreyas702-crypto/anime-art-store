@@ -1,50 +1,101 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Shreyas Anime Art Store</title>
-    <style>
-        body {
-            font-family: Arial;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
-        .gallery {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .card {
-            background: white;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px gray;
-        }
-        img {
-            border-radius: 8px;
-        }
-    </style>
+  <title>Shreyas Art Studio</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      margin: 0;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .card {
+      background: white;
+      width: 300px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    button {
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #e60000;
+    }
+
+  </style>
 </head>
+
 <body>
 
-<h1>Anime Drawings Available</h1>
+  <h1>Shreyas Art Studio 🎨</h1>
 
-<div class="gallery">
+  <div class="container">
+
     <div class="card">
-        <img src="luffy.jpeg" width="250">
-        <p>Price: ₹499</p>
+      <h3>Anime Portrait</h3>
+      <img src="luffy.jpeg" alt="Monkey.D.Luffy SpillArt">
+      <p>Price: ₹499</p>
+      <button>Buy Now</button>
     </div>
 
     <div class="card">
-        <img src="naruto.jpeg" width="250">
-        <p>Price: ₹499</p>
+      <h3>Pencil Sketch</h3>
+      <img src="naruto.jpeg" alt="Naruto Uzumaki SpillArt">
+      <p>Price: ₹499</p>
+      <button>Buy Now</button>
     </div>
 
     <div class="card">
-        <img src="rayne.jpeg" width="250">
-        <p>Price: ₹499</p>
+      <h3>Custom Portrait</h3>
+      <img src="rayne.jpeg" alt="Rayne Ames SpillArt">
+      <p>Price: ₹499</p>
+      <button>Buy Now</button>
     </div>
-</div>
+
+  </div>
 
 </body>
 </html>
