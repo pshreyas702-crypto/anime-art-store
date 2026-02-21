@@ -1,101 +1,132 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Shreyas Art Studio</title>
+    <title>Shreyas Anime Art Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-    h1 {
-      background-color: #222;
-      color: white;
-      padding: 20px;
-      margin: 0;
-      text-align: center;
-    }
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            background: linear-gradient(-45deg, #1e1e2f, #3a3a6a, #24243e, #0f0f1a);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+        }
 
-    .container {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      padding: 30px;
-    }
+        @keyframes gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
 
-    .card {
-      background: white;
-      width: 300px;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
+        header {
+            text-align: center;
+            padding: 30px;
+        }
 
-    .card:hover {
-      transform: scale(1.05);
-    }
+        header h1 {
+            font-size: 35px;
+            margin: 0;
+        }
 
-    img {
-      width: 100%;
-      border-radius: 10px;
-    }
+        header p {
+            color: #cccccc;
+        }
 
-    p {
-      font-size: 18px;
-      font-weight: bold;
-    }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
 
-    button {
-      background-color: #ff4d4d;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 16px;
-    }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            width: 250px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+            transition: 0.3s;
+        }
 
-    button:hover {
-      background-color: #e60000;
-    }
+        .card:hover {
+            transform: scale(1.05);
+        }
 
-  </style>
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        button {
+            background: #ff4d6d;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #ff1e4d;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0,0,0,0.6);
+            margin-top: 40px;
+        }
+    </style>
 </head>
 
 <body>
 
-  <h1>Shreyas Art Studio 🎨</h1>
+<header>
+    <h1>🔥 Shreyas Anime Art Store 🔥</h1>
+    <p>Handmade Premium Anime Drawings</p>
+</header>
 
-  <div class="container">
+<div class="container">
 
+    <!--luffy -->
     <div class="card">
-      <h3>Monkey.D.Luffy</h3>
-      <img src="luffy.jpeg" alt="Monkey.D.Luffy SpillArt">
-      <p>Price: ₹399</p>
-      <button>Buy Now</button>
+        <img src="luffy.jpeg" alt="Spill Art 1">
+        <h2>Monkey.D.Luffy</h2>
+        <p>Price: ₹399</p>
+        <button>Buy Now</button>
     </div>
 
+    <!-- naruto-->
     <div class="card">
-      <h3>Naruto Uzumaki</h3>
-      <img src="naruto.jpeg" alt="Naruto Uzumaki SpillArt">
-      <p>Price: ₹399</p>
-      <button>Buy Now</button>
+        <img src="naruto.jpeg" alt="Spill Art 2">
+        <h2>Naruto Uzumaki</h2>
+        <p>Price: ₹399</p>
+        <button>Buy Now</button>
     </div>
 
+    <!-- rayne -->
     <div class="card">
-      <h3>Rayne Ames</h3>
-      <img src="rayne.jpeg" alt="Rayne Ames SpillArt">
-      <p>Price: ₹399</p>
-      <button>Buy Now</button>
+        <img src="rayne.jpg" alt="Spill Art 3">
+        <h2>Rayne Ames</h2>
+        <p>Price: ₹399</p>
+        <button>Buy Now</button>
     </div>
 
-  </div>
+</div>
+
+<footer>
+    © 2026 Shreyas Anime Art Store | All Rights Reserved
+</footer>
 
 </body>
 </html>
