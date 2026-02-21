@@ -8,16 +8,29 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background: #0a0a0f;
+  overflow-x: hidden;
   color: white;
-  background: linear-gradient(270deg, #ff4d6d, #6a11cb, #2575fc);
-  background-size: 600% 600%;
-  animation: moveBackground 8s ease infinite;
 }
 
-@keyframes moveBackground {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+/* Purple Glow Animation */
+body::before {
+  content: "";
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, 
+              rgba(128, 0, 255, 0.4), 
+              rgba(0, 0, 0, 0.9));
+  animation: rotate 15s linear infinite;
+  z-index: -1;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 h1 {
@@ -28,16 +41,23 @@ h1 {
 .container {
   display: flex;
   justify-content: center;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .card {
-  background: rgba(0,0,0,0.6);
+  background: rgba(20,20,30,0.8);
   padding: 15px;
   border-radius: 10px;
   width: 250px;
   text-align: center;
+  box-shadow: 0 0 20px rgba(128,0,255,0.6);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(128,0,255,1);
 }
 
 .card img {
@@ -46,19 +66,24 @@ h1 {
 }
 
 button {
-  background: red;
+  background: purple;
   color: white;
   padding: 8px 12px;
   border: none;
   border-radius: 6px;
   margin-top: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #b300ff;
 }
 </style>
 </head>
 
 <body>
 
-<h1>🔥 My Anime Drawings 🔥</h1>
+<h1>⚔️ANIME ART STUDIO⚔️</h1>
 
 <div class="container">
 
@@ -70,13 +95,13 @@ button {
 
   <div class="card">
     <img src="naruto.jpeg">
-    <p>Price: ₹299</p>
+    <p>Price: ₹399</p>
     <button>Buy Now</button>
   </div>
 
   <div class="card">
     <img src="rayne.jpeg">
-    <p>Price: ₹299</p>
+    <p>Price: ₹399</p>
     <button>Buy Now</button>
   </div>
 
@@ -84,4 +109,3 @@ button {
 
 </body>
 </html>
-
